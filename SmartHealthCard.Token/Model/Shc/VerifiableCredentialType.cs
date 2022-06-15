@@ -14,8 +14,10 @@ namespace SmartHealthCard.Token.Model.Shc
     [EnumInfo(literal: "https://smarthealth.cards#immunization", description: "Immunization")]
     Immunization,
     [EnumInfo(literal: "https://smarthealth.cards#laboratory", description: "Laboratory")]
-    Laboratory
-  }
+    Laboratory,
+    [EnumInfo(literal: "https://smarthealth.cards#vaccine-exemtpion", description: "VaccineExemption")]
+    VaccineExemption
+}
 
   public static class VerifiableCredentialTypeSupport
   {
@@ -25,8 +27,9 @@ namespace SmartHealthCard.Token.Model.Shc
           { VerifiableCredentialType.Covid19.GetLiteral(), VerifiableCredentialType.Covid19 },
           { VerifiableCredentialType.HealthCard.GetLiteral(), VerifiableCredentialType.HealthCard },
           { VerifiableCredentialType.Immunization.GetLiteral(), VerifiableCredentialType.Immunization },
-          { VerifiableCredentialType.Laboratory.GetLiteral(), VerifiableCredentialType.Laboratory }
-        };
+          { VerifiableCredentialType.Laboratory.GetLiteral(), VerifiableCredentialType.Laboratory },
+          { VerifiableCredentialType.VaccineExemption.GetLiteral(), VerifiableCredentialType.VaccineExemption }  
+    };
   }
 
 
